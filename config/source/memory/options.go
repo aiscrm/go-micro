@@ -8,7 +8,7 @@ import (
 
 type changeSetKey struct{}
 
-func withData(d []byte, f string) source.Option {
+func WithData(d []byte, f string) source.Option {
 	return func(o *source.Options) {
 		if o.Context == nil {
 			o.Context = context.Background()
@@ -32,10 +32,15 @@ func WithChangeSet(cs *source.ChangeSet) source.Option {
 
 // WithJSON allows the source data to be set to json
 func WithJSON(d []byte) source.Option {
-	return withData(d, "json")
+	return WithData(d, "json")
 }
 
 // WithYAML allows the source data to be set to yaml
 func WithYAML(d []byte) source.Option {
-	return withData(d, "yaml")
+	return WithData(d, "yaml")
+}
+
+// WithTOML allows the source data to be set to toml
+func WithTOML(d []byte) source.Option {
+	return WithData(d, "toml")
 }
