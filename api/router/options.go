@@ -1,9 +1,9 @@
 package router
 
 import (
-	"github.com/micro/go-micro/v2/api/resolver"
-	"github.com/micro/go-micro/v2/api/resolver/vpath"
-	"github.com/micro/go-micro/v2/registry"
+	"github.com/aiscrm/go-micro/v2/api/resolver"
+	"github.com/aiscrm/go-micro/v2/api/resolver/vpath"
+	"github.com/aiscrm/go-micro/v2/registry"
 )
 
 type Options struct {

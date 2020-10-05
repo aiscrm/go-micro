@@ -5,13 +5,13 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/debug/stats"
-	"github.com/micro/go-micro/v2/debug/trace"
-	"github.com/micro/go-micro/v2/errors"
-	"github.com/micro/go-micro/v2/metadata"
-	"github.com/micro/go-micro/v2/server"
+	"github.com/aiscrm/go-micro/v2/auth"
+	"github.com/aiscrm/go-micro/v2/client"
+	"github.com/aiscrm/go-micro/v2/debug/stats"
+	"github.com/aiscrm/go-micro/v2/debug/trace"
+	"github.com/aiscrm/go-micro/v2/errors"
+	"github.com/aiscrm/go-micro/v2/metadata"
+	"github.com/aiscrm/go-micro/v2/server"
 )
 
 type fromServiceWrapper struct {

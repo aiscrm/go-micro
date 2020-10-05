@@ -18,8 +18,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/micro/go-micro/v2/codec"
-	merrors "github.com/micro/go-micro/v2/errors"
+	"github.com/aiscrm/go-micro/v2/codec"
+	merrors "github.com/aiscrm/go-micro/v2/errors"
 )
 
 var (

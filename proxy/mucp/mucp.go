@@ -10,16 +10,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/client/selector"
-	"github.com/micro/go-micro/v2/codec"
-	"github.com/micro/go-micro/v2/codec/bytes"
-	"github.com/micro/go-micro/v2/errors"
-	"github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/metadata"
-	"github.com/micro/go-micro/v2/proxy"
-	"github.com/micro/go-micro/v2/router"
-	"github.com/micro/go-micro/v2/server"
+	"github.com/aiscrm/go-micro/v2/client"
+	"github.com/aiscrm/go-micro/v2/client/selector"
+	"github.com/aiscrm/go-micro/v2/codec"
+	"github.com/aiscrm/go-micro/v2/codec/bytes"
+	"github.com/aiscrm/go-micro/v2/errors"
+	"github.com/aiscrm/go-micro/v2/logger"
+	"github.com/aiscrm/go-micro/v2/metadata"
+	"github.com/aiscrm/go-micro/v2/proxy"
+	"github.com/aiscrm/go-micro/v2/router"
+	"github.com/aiscrm/go-micro/v2/server"
 )
 
 // Proxy will transparently proxy requests to an endpoint.

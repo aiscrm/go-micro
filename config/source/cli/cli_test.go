@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/config"
-	"github.com/micro/go-micro/v2/config/cmd"
-	"github.com/micro/go-micro/v2/config/source"
+	"github.com/aiscrm/go-micro/v2"
+	"github.com/aiscrm/go-micro/v2/config"
+	"github.com/aiscrm/go-micro/v2/config/cmd"
+	"github.com/aiscrm/go-micro/v2/config/source"
 )
 
 func TestCliSourceDefault(t *testing.T) {
