@@ -7,6 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/aiscrm/go-micro/v2/registry/consul"
+
 	"github.com/aiscrm/go-micro/v2/auth"
 	"github.com/aiscrm/go-micro/v2/auth/provider"
 	"github.com/aiscrm/go-micro/v2/broker"
@@ -343,6 +345,7 @@ var (
 	DefaultRegistries = map[string]func(...registry.Option) registry.Registry{
 		"service": regSrv.NewRegistry,
 		"etcd":    etcd.NewRegistry,
+		"consul":  consul.NewRegistry,
 		"mdns":    mdns.NewRegistry,
 		"memory":  rmem.NewRegistry,
 	}
