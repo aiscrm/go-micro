@@ -11,10 +11,9 @@ import (
 	"sync"
 	"time"
 
-	consul "github.com/hashicorp/consul/api"
-	"github.com/aiscrm/go-micro/v2/config/cmd"
 	"github.com/aiscrm/go-micro/v2/registry"
 	mnet "github.com/aiscrm/go-micro/v2/util/net"
+	consul "github.com/hashicorp/consul/api"
 	hash "github.com/mitchellh/hashstructure"
 )
 
@@ -34,10 +33,6 @@ type consulRegistry struct {
 	register map[string]uint64
 	// lastChecked tracks when a node was last checked as existing in Consul
 	lastChecked map[string]time.Time
-}
-
-func init() {
-	cmd.DefaultRegistries["consul"] = NewRegistry
 }
 
 func getDeregisterTTL(t time.Duration) time.Duration {
